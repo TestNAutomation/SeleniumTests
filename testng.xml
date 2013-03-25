@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="IntegrationTestSuite" verbose="1" parallel="methods" thread-count="5" >
+
+	<listeners>
+		<listener class-name="com.pb.SeleniumTests.ScreenShotListner"></listener>
+	</listeners>
+	
+	<test name="SetUp">
+		<classes>
+			<class name="com.pb.SeleniumTests.SetUpTests"></class>
+		</classes>
+	</test>
+	
+	<test name="HomePageTests">
+		<classes>
+			<class name="com.pb.SeleniumTests.HomePageTestSuite"></class>
+		</classes>
+	</test>
+</suite>
