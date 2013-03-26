@@ -36,6 +36,7 @@ public class SeleniumBase {
 	}
 
 	private static WebDriver loadDriver() {
+		//TODO: Double check with and without selenium grid
 		hubURL = _prop.getString("hubURL");
 		try {
 			URL ulr = new URL(hubURL);
@@ -44,7 +45,7 @@ public class SeleniumBase {
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (UnreachableBrowserException e) {
-			return getDriverForBrowserType();
+			e.printStackTrace();
 		}
 		return getDriverForBrowserType();
 	}
