@@ -1,10 +1,5 @@
 package com.pb.SeleniumTests;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-
 import org.apache.commons.lang3.time.DateFormatUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -13,6 +8,11 @@ import org.openqa.selenium.WebDriverException;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class ScreenShotListner extends TestListenerAdapter {
 
