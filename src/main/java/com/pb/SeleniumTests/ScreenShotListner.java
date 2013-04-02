@@ -25,6 +25,11 @@ public class ScreenShotListner extends TestListenerAdapter {
 		super.onTestFailure(tr);
 	}
 
+    @Override
+    public void onFinish(org.testng.ITestContext testContext) {
+        //TODO: change xml to xls to put results into database
+    }
+
 	private void captureScreenShot(String methodName) {
 		File screenshot = new File("target"
 				+ File.separator
